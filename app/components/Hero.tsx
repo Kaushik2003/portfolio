@@ -3,6 +3,9 @@
 import { motion } from "framer-motion"
 import { Github, Linkedin, Twitter } from "lucide-react"
 
+import { InteractiveHoverButton } from "../../components/magicui/interactive-hover-button"
+import { NeumorphEyebrow } from "../../components/ui/neumorph-eyebrow"
+
 const socialLinks = [
   {
     name: "GitHub",
@@ -26,62 +29,55 @@ const socialLinks = [
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20 bg-black" id="hero">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="min-h-screen flex items-center justify-center px-8 md:px-20 py-20 bg-black" id="hero">
+      <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20">
+        {/* Left: Profile Image */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex-1 flex justify-center md:justify-end items-center mb-6 md:mb-2"
         >
-          <h1 className="text-7xl md:text-9xl font-bold text-white mb-6 tracking-tight">
-            I&apos;m <span className="gradient-text">Kaushik</span>
+          <div className="relative w-56 h-56 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-gray-800 bg-gradient-to-br from-gray-900 via-black to-gray-800">
+            <img
+              src="/profile-photo.jpg"
+              alt="Your profile"
+              className="object-cover w-full h-full"
+            />
+          </div>
+        </motion.div>
+        {/* Right: Text Content */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="flex-1 text-center md:text-left flex flex-col self-center md:self-start justify-center md:justify-center items-center md:items-start"
+        >
+          <NeumorphEyebrow className="mb-2 ">
+            <span className="mr-2 inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+            Looking for Internships
+          </NeumorphEyebrow>
+
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-2 tracking-tight flex items-center justify-center md:justify-start">
+            Hi, I&apos;m Kaushik
+            {/* <span className="ml-2 text-3xl md:text-4xl">👋</span> */}
           </h1>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-2xl md:text-3xl text-gray-300 mb-8 font-light tracking-wide font-mono"
-          >
+          <div className="text-xl md:text-2xl text-gray-300 mb-3 font-light tracking-wide font-mono">
             Full Stack | Web3 | AI/ML
-          </motion.div>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed"
-          >
-            I build things at the intersection of design, code &amp; emerging tech.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.4 }}
-            className="flex justify-center space-x-6"
-            role="list"
-            aria-label="Social media links"
-          >
-            {socialLinks.map((link) => {
-              const IconComponent = link.icon
-              return (
-                <motion.a
-                  key={link.name}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-gray-900 text-white hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 focus:ring-offset-black border border-gray-800"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  aria-label={link.label}
-                  role="listitem"
-                >
-                  <IconComponent size={24} aria-hidden="true" />
-                </motion.a>
-              )
-            })}
-          </motion.div>
+          </div>
+          <p className="text-base md:text-lg text-gray-400 max-w-lg mb-6 leading-tight">
+            I build things at the intersection of design, code & emerging tech.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center md:justify-start w-full md:w-auto">
+            {/* <ShimmerButton className="shadow-2xl" shimmerColor="#aea1f9">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                View work
+              </span>
+            </ShimmerButton> */}
+            <InteractiveHoverButton>
+              Contact me
+            </InteractiveHoverButton>
+          </div>
         </motion.div>
       </div>
     </section>

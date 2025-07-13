@@ -74,7 +74,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.08 }} // Instant cut and italics
-            className="text-6xl md:text-8xl font-bold text-white tracking-tight italic"
+            className="text-4xl md:text-6xl text-white tracking-tight italic font-semibold"
             style={{ fontFamily: "var(--font-sans)" }}
             aria-label={`${greetings[currentIndex]?.text} in ${greetings[currentIndex]?.lang}`}
           >

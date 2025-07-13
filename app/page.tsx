@@ -8,6 +8,7 @@ import About from "./components/About"
 import Experience from "./components/Experience"
 import Contact from "./components/Contact"
 import ErrorBoundary from "./components/ErrorBoundary"
+import { ScrollArea } from "@/components/ui/scroll-area"
 
 // Lazy load components for better performance
 const LazySkills = dynamic(() => import("./components/Skills"), {
@@ -67,7 +68,7 @@ export default function Home() {
           <About />
           <LazySkills />
           <LazyProjects />
-          <LazyGitHubActivity />
+          {/* <LazyGitHubActivity /> */}
           <LazyBlogs />
           <Experience />
           <Contact />
