@@ -5,6 +5,7 @@ import { Github, Linkedin, Twitter } from "lucide-react"
 
 import { InteractiveHoverButton } from "../../components/magicui/interactive-hover-button"
 import { NeumorphEyebrow } from "../../components/ui/neumorph-eyebrow"
+import { FlipWords } from "@/components/ui/flip-words"
 
 const socialLinks = [
   {
@@ -65,9 +66,10 @@ export default function Hero() {
           <div className="text-xl md:text-2xl text-gray-300 mb-3 font-light tracking-wide font-mono">
             Full Stack | Web3 | AI/ML
           </div>
-          <p className="text-base md:text-lg text-gray-400 max-w-lg mb-6 leading-tight">
-            I build things at the intersection of design, code & emerging tech.
-          </p>
+          <div className="text-base md:text-lg text-gray-400 max-w-lg mb-6 leading-tight">
+            I Build products that are 
+            <FlipWords className="" words={["innovative", "cool", "impactful","disruptive","scalable"]} />
+          </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center md:justify-start w-full md:w-auto">
             {/* <ShimmerButton className="shadow-2xl" shimmerColor="#aea1f9">
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
