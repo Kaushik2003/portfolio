@@ -1,12 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Calendar, Sparkle, Linkedin, Github, Twitter, Instagram,Book,Dribbble,Youtube } from "lucide-react"
+import { Calendar, Sparkle, Linkedin, Github, Twitter, Instagram, Book, Dribbble, Youtube } from "lucide-react"
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { BentoGrid } from "@/components/magicui/bento-grid";
 import { AnimatedListDemo } from "@/components/AnimatedListDemo";
 import DockDemo from "@/components/DockDemo";
+import { VideoText } from "@/components/magicui/video-text";
+
 
 const socialLinks = [
   { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/kaushik-samadder-4346191a9/" },
@@ -38,9 +40,9 @@ export default function About() {
 
   return (
     <section className="py-16 px-4 md:px-8 bg-black mb-20" id="about">
-      
+
       <div className="max-w-7xl mx-auto">
-      <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">About Me</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">About Me</h2>
         <BentoGrid className="grid-cols-1 md:grid-cols-4 auto-rows-[208px] gap-5">
           {/* Profile Card */}
           <motion.div
@@ -69,8 +71,19 @@ export default function About() {
             viewport={{ once: true }}
             className="md:col-span-2 rounded-2xl shadow-2xl border border-[#333] bg-black/40 backdrop-blur-md p-8 flex flex-col justify-center"
           >
-            <h1 className="text-4xl md:text-5xl font-light text-white mb-4">
-              I&apos;m <span className="font-bold">Kaushik Samadder</span>
+            {/* <h1 className="text-4xl md:text-5xl font-light text-white mb-4">
+              I&apos;m
+              <span className="font-bold"> Kaushik Samadder</span>
+            </h1> */}
+            <h1 className="text-4xl md:text-5xl font-light text-white mb-4 flex gap-1">
+              I&apos;m
+              <VideoText
+                src="/aboutmevideo.mp4"
+                className="font-bold inline-block pl-1 mt-1"
+                fontSize="3.5rem"
+              >
+              Kaushik Samadder
+              </VideoText>
             </h1>
             <p className="text-gray-400 leading-relaxed text-base">
               My journey in the world of development began 4 years ago with a fascination for the digital realm. From my early
@@ -179,7 +192,7 @@ export default function About() {
             className="md:col-span-2 rounded-2xl shadow-2xl border border-[#333] bg-black/40 backdrop-blur-md p-6 flex flex-col"
           >
             <h3 className="text-2xl font-bold text-white font-mono uppercase">STACK.</h3>
-              <DockDemo />
+            <DockDemo />
           </motion.div>
 
           {/* Schedule Card */}
