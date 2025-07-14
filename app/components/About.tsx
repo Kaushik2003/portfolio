@@ -218,7 +218,7 @@ export default function About() {
             </div>
             {/* Card Content */}
             <a
-              href="https://calendly.com/kaushik-samadder"
+              href="https://calendar.app.google/aJhS1YQNNrrwQnN19"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center space-y-2 text-white z-20 group-hover:text-black"

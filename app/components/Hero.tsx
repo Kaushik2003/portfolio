@@ -6,6 +6,7 @@ import { Github, Linkedin, Twitter } from "lucide-react"
 import { InteractiveHoverButton } from "../../components/magicui/interactive-hover-button"
 import { NeumorphEyebrow } from "../../components/ui/neumorph-eyebrow"
 import { FlipWords } from "@/components/ui/flip-words"
+import { ShimmerButton } from "@/components/magicui/shimmer-button"
 
 const socialLinks = [
   {
@@ -67,17 +68,36 @@ export default function Hero() {
             Full Stack | Web3 | AI/ML
           </div>
           <div className="text-base md:text-lg text-gray-400 max-w-lg mb-6 leading-tight">
-            I Build products that are 
-            <FlipWords className="" words={["innovative", "cool", "impactful","disruptive","scalable"]} />
+            I Build products that are
+            <FlipWords className="" words={["innovative", "cool", "impactful", "disruptive", "scalable"]} />
           </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center md:justify-start w-full md:w-auto">
-            {/* <ShimmerButton className="shadow-2xl" shimmerColor="#aea1f9">
+            <ShimmerButton
+              className="shadow-2xl"
+              shimmerColor="#aea1f9"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/resume.pdf';
+                link.download = 'Kaushik_Samadder_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
               <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                View work
+                Download Resume
               </span>
-            </ShimmerButton> */}
-            <InteractiveHoverButton>
-              Contact me
+            </ShimmerButton>
+            {/* @ts-ignore */}
+            <InteractiveHoverButton asChild>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=kaushiksamadder2003@gmail.com&su=Contact%20from%20Portfolio&body=Hi%20Kaushik%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0A%0A"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email Kaushik Samadder via Gmail"
+              >
+                Contact me
+              </a>
             </InteractiveHoverButton>
           </div>
         </motion.div>

@@ -17,7 +17,7 @@ export default function GitHubActivity() {
   } = userData || {}
 
   return (
-    <section className="py-16 px-4 md:px-8 bg-black mb-20" id="github">
+    <section className="py-28 px-4 md:px-8 bg-black " id="github">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -8,25 +8,24 @@ import About from "./components/About"
 import Experience from "./components/Experience"
 import Contact from "./components/Contact"
 import { ScrollProgress } from "@/components/magicui/scroll-progress"
-import GitHubCalendar from 'react-github-calendar';
 
 
 
 // Lazy load components for better performance
 const LazySkills = dynamic(() => import("./components/Skills"), {
-  loading: () => <div className="h-96 animate-pulse bg-gray-900 rounded-3xl" />,
+  loading: () => <div className="h-96 animate-pulse rounded-3xl " />,
 })
 
 const LazyProjects = dynamic(() => import("./components/Projects"), {
-  loading: () => <div className="h-96 animate-pulse bg-gray-900 rounded-3xl" />,
+  loading: () => <div className="h-96 animate-pulse  rounded-3xl" />,
 })
 
 const LazyGitHubActivity = dynamic(() => import("./components/GitHubActivity"), {
-  loading: () => <div className="h-96 animate-pulse bg-gray-900 rounded-3xl" />,
+  loading: () => <div className="h-96 animate-pulse  rounded-3xl" />,
 })
 
 const LazyBlogs = dynamic(() => import("./components/Blogs"), {
-  loading: () => <div className="h-96 animate-pulse bg-gray-900 rounded-3xl" />,
+  loading: () => <div className="h-96 animate-pulse  rounded-3xl" />,
 })
 
 export default function Home() {
@@ -69,9 +68,10 @@ export default function Home() {
           <LazySkills />
           <LazyProjects />
           <LazyGitHubActivity />
-          {/* <LazyBlogs /> */}
           <Experience />
+          {/* <LazyBlogs /> */}
           <Contact />
+         
           <ScrollProgress />
         </div>
       </main>

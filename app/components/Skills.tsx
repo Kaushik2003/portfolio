@@ -68,7 +68,7 @@ export default function Skills() {
 
   return (
 
-    <section className="py-20 px-4 md:px-8 bg-black ]" id="skills">
+    <section className="py-24 px-4 md:px-8 bg-black ]" id="skills">
       {/* Match About section horizontal padding */}
       <div className="max-w-7xl mx-auto">
         {/* Match About container width */}

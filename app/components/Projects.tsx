@@ -10,7 +10,7 @@ type DummyContentProps = { index: number }
 const DummyContent = ({ index }: DummyContentProps) => {
   const project = projects[index];
   return (
-    <div className="flex flex-col md:flex-row gap- w-full items-stretch">
+    <div className="flex flex-col md:flex-row gap- w-full items-stretch ">
       {/* Left: Cinematic Project Image (75%) with 16:9 aspect ratio */}
       <div className="w-full md:w-[75%] rounded-2xl relative aspect-[16/9] overflow-hidden shadow-xl flex items-center justify-center">
         <Image
