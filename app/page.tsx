@@ -69,7 +69,7 @@ export default function Home() {
           <LazySkills />
           <LazyProjects />
           <LazyGitHubActivity />
-          <LazyBlogs />
+          {/* <LazyBlogs /> */}
           <Experience />
           <Contact />
           <ScrollProgress />

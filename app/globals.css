@@ -7,7 +7,7 @@
   /* 🎨 Aesthetic DNA */
   --color-primary: #000000; /* Absolute contrast — the canvas of digital focus */
   --color-secondary: #f5f5f5; /* Whispered neutrality — lets content breathe */
-  --color-accent: #f5f5f5); /* Gradient pulse of confidence */
+  --color-accent: #f5f5f5; /* Gradient pulse of confidence */
   --font-sans: var(--font-space-grotesk), "Inter", "Satoshi", system-ui, sans-serif; /* Technical meets artistic */
   --font-mono: var(--font-jetbrains-mono), "Fira Code", monospace; /* Code-native charisma */
 
@@ -59,15 +59,6 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* Hide scrollbar for all browsers */
-html, body {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-}
-html::-webkit-scrollbar, body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
 }
 
 /* 🧩 Component Expression */

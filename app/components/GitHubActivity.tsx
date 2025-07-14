@@ -1,12 +1,12 @@
 "use client"
 
 import { motion } from "framer-motion"
-import GitHubCalendar from 'react-github-calendar';
-import useGithubStats from "react-github-user-stats";
-import { ShimmerButton } from "@/components/magicui/shimmer-button";
+import GitHubCalendar from "react-github-calendar"
+import useGithubStats from "react-github-user-stats"
+import { ShimmerButton } from "@/components/magicui/shimmer-button"
 export default function GitHubActivity() {
   // Destructure the correct properties from userData
-  const { error, loading, userData } = useGithubStats("Kaushik2003");
+  const { error, loading, userData } = useGithubStats("Kaushik2003")
   const {
     public_repos: totalRepos = 0,
     total_stars: totalStars = 0,
@@ -14,7 +14,7 @@ export default function GitHubActivity() {
     following = 0,
     total_forks: totalForks = 0,
     // totalCommits and contributionsThisYear are not available in this API, so use null or placeholder
-  } = userData || {};
+  } = userData || {}
 
   return (
     <section className="py-16 px-4 md:px-8 bg-black mb-20" id="github">
@@ -27,9 +27,7 @@ export default function GitHubActivity() {
           className="text-center mb-10"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-3 tracking-tight">GitHub Activity</h2>
-          <p className="text-gray-400 text-lg max-w-xl mx-auto">
-            My open source journey, visualized.
-          </p>
+          <p className="text-gray-400 text-lg max-w-xl mx-auto">My open source journey, visualized.</p>
         </motion.div>
         {/* Stats Row */}
         <motion.div
@@ -39,19 +37,19 @@ export default function GitHubActivity() {
           viewport={{ once: true }}
           className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10 w-full"
         >
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 text-center shadow-lg">
+          <div className="rounded-2xl shadow-2xl border border-[#333] bg-black/40 backdrop-blur-md p-6 text-center">
             <div className="text-3xl font-bold text-white mb-1 font-mono">{followers}</div>
             <div className="text-gray-300 text-sm">Followers</div>
           </div>
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 text-center shadow-lg">
+          <div className="rounded-2xl shadow-2xl border border-[#333] bg-black/40 backdrop-blur-md p-6 text-center">
             <div className="text-3xl font-bold text-yellow-400 mb-1 font-mono">{totalStars}</div>
             <div className="text-gray-300 text-sm">Stars</div>
           </div>
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 text-center shadow-lg">
+          <div className="rounded-2xl shadow-2xl border border-[#333] bg-black/40 backdrop-blur-md p-6 text-center">
             <div className="text-3xl font-bold text-blue-400 mb-1 font-mono">{totalRepos}</div>
             <div className="text-gray-300 text-sm">Repositories</div>
           </div>
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 text-center shadow-lg">
+          <div className="rounded-2xl shadow-2xl border border-[#333] bg-black/40 backdrop-blur-md p-6 text-center">
             <div className="text-3xl font-bold text-green-400 mb-1 font-mono">{totalForks}</div>
             <div className="text-gray-300 text-sm">Total Forks</div>
           </div>
@@ -62,7 +60,7 @@ export default function GitHubActivity() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="flex justify-center items-center bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 shadow-xl w-full"
+          className="flex justify-center items-center rounded-2xl shadow-2xl border border-[#333] bg-black/40 backdrop-blur-md p-8 w-full"
         >
           <GitHubCalendar username="Kaushik2003" colorScheme="dark" />
         </motion.div>
