@@ -7,8 +7,10 @@ import Hero from "./components/Hero"
 import About from "./components/About"
 import Experience from "./components/Experience"
 import Contact from "./components/Contact"
-import ErrorBoundary from "./components/ErrorBoundary"
-import { ScrollArea } from "@/components/ui/scroll-area"
+import { ScrollProgress } from "@/components/magicui/scroll-progress"
+import GitHubCalendar from 'react-github-calendar';
+
+
 
 // Lazy load components for better performance
 const LazySkills = dynamic(() => import("./components/Skills"), {
@@ -55,7 +57,6 @@ export default function Home() {
   }
 
   return (
-    <ErrorBoundary>
       <main className="min-h-screen bg-black">
         <div className="relative">
           {/* Subtle texture overlay */}
@@ -63,17 +64,16 @@ export default function Home() {
             className="fixed inset-0 opacity-20 pointer-events-none"
             aria-hidden="true"
           />
-
           <Hero />
           <About />
           <LazySkills />
           <LazyProjects />
-          {/* <LazyGitHubActivity /> */}
+          <LazyGitHubActivity />
           <LazyBlogs />
           <Experience />
           <Contact />
+          <ScrollProgress />
         </div>
       </main>
-    </ErrorBoundary>
   )
 }

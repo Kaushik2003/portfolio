@@ -6,6 +6,7 @@ import { ExternalLink, Github } from "lucide-react"
 const projects = [
   {
     name: "chainZap",
+    image: "/images/projects/chainzap.png",
     description: "Cross-chain DeFi protocol for seamless asset transfers",
     category: "Blockchain",
     year: "2024",
@@ -15,6 +16,7 @@ const projects = [
   },
   {
     name: "Dava",
+    image: "/images/projects/chainzap.png",
     description: "AI-powered healthcare management system",
     category: "AI/ML",
     year: "2024",
@@ -24,6 +26,7 @@ const projects = [
   },
   {
     name: "Homiey",
+    image: "/images/projects/chainzap.png",
     description: "Smart home automation platform with IoT integration",
     category: "Full Stack",
     year: "2023",
@@ -33,6 +36,7 @@ const projects = [
   },
   {
     name: "rubik",
+    image: "/images/projects/chainzap.png",
     description: "Algorithm visualization tool for competitive programming",
     category: "Web App",
     year: "2023",
@@ -42,6 +46,7 @@ const projects = [
   },
   {
     name: "V4",
+    image: "/images/projects/chainzap.png",
     description: "Version control system built from scratch",
     category: "Systems",
     year: "2023",
@@ -51,6 +56,7 @@ const projects = [
   },
   {
     name: "CORO-TASHI",
+    image: "/images/projects/chainzap.png",
     description: "COVID-19 tracking and analysis dashboard",
     category: "Data Viz",
     year: "2022",
@@ -62,7 +68,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-20 px-6 bg-black" id="projects">
+    <section className="mt-20 py-20 px-6 bg-black" id="projects">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

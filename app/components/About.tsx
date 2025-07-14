@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Calendar, Sparkle, Linkedin, Github, Twitter, Instagram, ExternalLink } from "lucide-react"
+import { Calendar, Sparkle, Linkedin, Github, Twitter, Instagram,Book,Dribbble,Youtube } from "lucide-react"
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { BentoGrid } from "@/components/magicui/bento-grid";
@@ -9,12 +9,12 @@ import { AnimatedListDemo } from "@/components/AnimatedListDemo";
 import DockDemo from "@/components/DockDemo";
 
 const socialLinks = [
-  { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com/in/kaushik-samadder" },
-  { name: "Behance", icon: ExternalLink, url: "https://behance.net/kaushik" },
-  { name: "GitHub", icon: Github, url: "https://github.com/kaushiksamadder" },
-  { name: "Dribbble", icon: ExternalLink, url: "https://dribbble.com/kaushik" },
-  { name: "Instagram", icon: Instagram, url: "https://instagram.com/kzark" },
-  { name: "Twitter", icon: Twitter, url: "https://twitter.com/kzark_dev" },
+  { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/kaushik-samadder-4346191a9/" },
+  { name: "Medium", icon: Book, url: "https://medium.com/@kaushiksamadder2003" },
+  { name: "GitHub", icon: Github, url: "https://github.com/Kaushik2003" },
+  { name: "Youtube", icon: Youtube, url: "https://www.youtube.com/@kaushiksamadder5454" },
+  { name: "Instagram", icon: Instagram, url: "https://www.instagram.com/kaushiksamadder" },
+  { name: "Twitter", icon: Twitter, url: "https://x.com/KaushikSam58090" },
 ]
 
 export default function About() {
@@ -37,9 +37,11 @@ export default function About() {
   }, [])
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-black" id="about">
+    <section className="py-16 px-4 md:px-8 bg-black mb-20" id="about">
+      
       <div className="max-w-7xl mx-auto">
-        <BentoGrid className="grid-cols-1 md:grid-cols-4 auto-rows-[220px] gap-5">
+      <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-4">About Me</h2>
+        <BentoGrid className="grid-cols-1 md:grid-cols-4 auto-rows-[208px] gap-5">
           {/* Profile Card */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -162,7 +164,7 @@ export default function About() {
             viewport={{ once: true }}
             className="rounded-2xl shadow-2xl border border-[#333] bg-black/40 backdrop-blur-md p-6 flex flex-col"
           >
-            <h3 className="text-2xl font-bold text-white mb-4 font-mono uppercase">AKA.</h3>
+            <h3 className="text-2xl font-bold text-white mb-4 font-mono uppercase">LORE.</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
               Within the realm of designers, I&apos;m recognised by the alias <span className="text-white font-semibold italic">kzark</span>, a name I&apos;ve been using ever since I embarked on my design journey.
             </p>
