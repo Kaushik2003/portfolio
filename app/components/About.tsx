@@ -82,11 +82,15 @@ export default function About() {
                 className="font-bold inline-block pl-1 mt-1"
                 fontSize="3.5rem"
               >
-              Kaushik Samadder
+                Kaushik Samadder
               </VideoText>
             </h1>
             <p className="text-gray-400 leading-relaxed text-base">
-              My journey in the world of development began 4 years ago with a fascination for the digital realm. From my early
+              Started coding 4 years ago,<br />
+              exploring AI/ML, smart contracts, and the edges of tech.<br />
+              3rd year CS student building products, contributing to open source.<br />
+              Always curious, always building.
+
             </p>
           </motion.div>
 
@@ -132,7 +136,7 @@ export default function About() {
             <h3 className="text-3xl font-mono font-bold text-white mb-2 uppercase tracking-wider italic">SKILLS.</h3>
             <ul className="space-y-1 text-white italic">
               <li className="font-medium text-sm leading-tight">Full Stack Developer</li>
-              <li className="font-medium text-sm leading-tight">Web3 Engineer</li>
+              <li className="font-medium text-sm leading-tight">Blockchain Engineer</li>
               <li className="font-medium text-sm leading-tight">AI/ML Enthusiast</li>
               <li className="font-medium text-sm leading-tight">Technical Blogger</li>
             </ul>
@@ -179,7 +183,10 @@ export default function About() {
           >
             <h3 className="text-2xl font-bold text-white mb-4 font-mono uppercase">LORE.</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Within the realm of designers, I&apos;m recognised by the alias <span className="text-white font-semibold italic">kzark</span>, a name I&apos;ve been using ever since I embarked on my design journey.
+              Among developers, known as
+              <span className="text-white font-semibold italic"> kzark  </span>
+              <br />
+              A personal insignia I&apos;ve carried since the genesis of my development journey.
             </p>
           </motion.div>
 
@@ -226,7 +233,7 @@ export default function About() {
               style={{ background: "transparent" }}
             >
               <Calendar size={28} />
-              <span className="font-medium text-lg">Schedule a call</span>
+              <span className="font-medium text-lg">Book Appointment</span>
             </a>
           </motion.div>
         </BentoGrid>

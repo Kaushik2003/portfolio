@@ -65,13 +65,12 @@ export default function Home() {
           />
           <Hero />
           <About />
-          <LazySkills />
           <LazyProjects />
+          <LazySkills />
           <LazyGitHubActivity />
           <Experience />
           {/* <LazyBlogs /> */}
           <Contact />
-         
           <ScrollProgress />
         </div>
       </main>

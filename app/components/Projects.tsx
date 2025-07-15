@@ -106,19 +106,8 @@ const tabs = [
     ),
   },
   {
-    title: "rubik",
-    value: "rubik",
-    content: (
-      <div className="w-full overflow-hidden relative h-full rounded-2xl">
-        {" "}
-        {/* Removed background and text styling */}
-        <DummyContent index={3} />
-      </div>
-    ),
-  },
-  {
-    title: "V4",
-    value: "V4",
+    title: "Reco",
+    value: "Reco",
     content: (
       <div className="w-full overflow-hidden relative h-full rounded-2xl">
         {" "}
@@ -128,7 +117,7 @@ const tabs = [
     ),
   },
   {
-    title: "CORO-TASHI",
+    title: "CoroTashi",
     value: "CORO-TASHI",
     content: (
       <div className="w-full overflow-hidden relative h-full rounded-2xl">
@@ -141,65 +130,92 @@ const tabs = [
 ]
 const projects = [
   {
-    name: "chainZap",
-    image: "/chainzap.png",
-    description: "Cross-chain DeFi protocol for seamless asset transfers",
-    category: "Blockchain",
-    year: "2024",
-    github: "https://github.com/kaushiksamadder/chainzap",
-    demo: "https://chainzap.vercel.app",
-    tech: ["Solana", "Web3", "TypeScript", "Next.js"],
+    "name": "ChainZap",
+    "image": "/chainzap.png",
+    "description": "A decentralized, trustless solution for planning your digital legacy on the Aptos blockchain.",
+    "category": "Blockchain",
+    "year": "2025",
+    "github": "https://github.com/kaushik2003/chainzap",
+    "demo": null,
+    "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Aptos", "Move"]
   },
   {
-    name: "Dava",
-    image: "/dava.png",
-    description: "AI-powered healthcare management system",
-    category: "AI/ML",
-    year: "2024",
-    github: "https://github.com/kaushiksamadder/dava",
-    demo: "https://dava-health.vercel.app",
-    tech: ["Python", "TensorFlow", "React", "FastAPI"],
+    "name": "Dava",
+    "image": "/dava.png",
+    "description": "Decentralized healthcare platform with NFT-based medical records, role-based access, and blockchain-powered privacy.",
+    "category": "Blockchain/Healthcare",
+    "year": "2025",
+    "github": "https://github.com/kaushik2003/dava",
+    "demo": "https://dava-theta.vercel.app",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Tailwind CSS",
+      "Radix UI",
+      "Framer Motion",
+      "Wagmi",
+      "Viem",
+      "RainbowKit",
+      "Zustand",
+      "React Hook Form",
+      "Zod",
+      "Recharts",
+      "Pinata",
+      "IPFS",
+      "ERC-721",
+      "WebSockets",
+      "Three.js"
+    ]
+  },  
+  {
+    "name": "Homiey",
+    "image": "/homiey.png",
+    "description": "AI-powered educational assistant for exam prep, doubts, and assessments",
+    "category": "AI & EdTech",
+    "year": "2024",
+    "github": "https://github.com/Kaushik2003/Homiey",
+    "demo": "https://homiey.vercel.app/",
+    "tech": ["Next.js", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "MongoDB", "Gemini AI"]
+  },  
+  {
+    "name": "Rubik",
+    "image": "/rubik.png",
+    "description": "AI Onchain Agent that can perform onchain operations on Base (Base Sepolia). It features a Python backend that integrates Gemini with CDP AgentKit to execute blockchain actions and a Next.js frontend providing an AI-powered chat interface to interact with the agent.",
+    "category": "AI Agent",
+    "year": "2025",
+    "github": "https://github.com/kaushik2003/rubik",
+    "demo": null,
+    "tech": ["Gemini", "CDP AgentKit", "Base Chain", "Next.js", "Flask", "Python", "React", "Tailwind CSS", "TypeScript", "LangChain", "SQLite", "Bun"]
   },
   {
-    name: "Homiey",
-    image: "/homiey.png",
-    description: "Smart home automation platform with IoT integration",
-    category: "Full Stack",
-    year: "2023",
-    github: "https://github.com/kaushiksamadder/homiey",
-    demo: "https://homiey.vercel.app",
-    tech: ["React", "Node.js", "MongoDB", "Socket.io"],
+    "name": "Reco",
+    "image": "/reco.png",
+    "description": "A modern, customizable portfolio platform built with Next.js, Tailwind CSS, shadcn/ui, and Zustand. It enables professionals to create, manage, and showcase their portfolios with a beautiful, drag-and-drop interface and fully editable sections.",
+    "category": "Web Development",
+    "year": "2025",
+    "github": "https://github.com/kaushik2003/reco",
+    "demo": "http://localhost:3000",
+    "tech": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Zustand",
+      "Lucide Icons",
+      "TypeScript"
+    ]
   },
   {
-    name: "rubik",
-    image: "/images/projects/chainzap.png",
-    description: "Algorithm visualization tool for competitive programming",
-    category: "Web App",
-    year: "2023",
-    github: "https://github.com/kaushiksamadder/rubik",
-    demo: null,
-    tech: ["JavaScript", "D3.js", "React", "Algorithms"],
-  },
-  {
-    name: "V4",
-    image: "/images/projects/chainzap.png",
-    description: "Version control system built from scratch",
-    category: "Systems",
-    year: "2023",
-    github: "https://github.com/kaushiksamadder/v4",
-    demo: null,
-    tech: ["Go", "Git", "CLI", "File System"],
-  },
-  {
-    name: "CORO-TASHI",
-    image: "/coro-tashi.png",
-    description: "COVID-19 tracking and analysis dashboard",
-    category: "Data Viz",
-    year: "2022",
-    github: "https://github.com/kaushiksamadder/coro-tashi",
-    demo: "https://coro-tashi.vercel.app",
-    tech: ["React", "Chart.js", "API", "Data Analysis"],
-  },
+    "name": "Coro Tashi",
+    "image": "/coro-tashi.png",
+    "description": "A next-generation DeFi staking protocol by CoreDAO. Stake CORE tokens, receive stCORE, and earn auto-compounding rewards with no lockups or intermediaries.",
+    "category": "DeFi",
+    "year": "2023",
+    "github": "https://github.com/PepsiCola-kulfi/CORO-TASHI",
+    "demo": "https://coro-tashi.vercel.app/",
+    "tech": ["Next.js", "React", "TypeScript", "Ethers.js", "Solidity", "Tailwind CSS"]
+   }
 ]
 
 export default function Projects() {

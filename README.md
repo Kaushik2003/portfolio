@@ -1,36 +1,114 @@
+# Kaushik Samadder – Portfolio 🚀
 
+A modern, interactive portfolio built with **Next.js**, **React**, and **Tailwind CSS**.  
+Showcases projects, skills, blogs, and experience in full-stack, blockchain, and AI/ML development.
 
-## Getting Started
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Next.js](https://img.shields.io/badge/Next.js-13-black?logo=next.js)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-06B6D4?logo=tailwindcss)
+![TypeScript](https://img.shields.io/badge/TypeScript-4-3178C6?logo=typescript)
 
-First, run the development server:
+---
 
-```bash
+## ✨ Features
+
+- **Hero Section:** Intro, social links, and resume download.
+- **About Me:** Background, stack, and story.
+- **Projects:** Highlights with images, stack, and links.
+- **Skills:** Categorized (Frontend, Backend, DB, DevOps, Blockchain, Languages).
+- **Experience:** Timeline of roles.
+- **Blogs:** Featured posts on tech, AI/ML, blockchain.
+- **GitHub Activity:** Live stats & contributions.
+- **Contact:** Email & calendar booking.
+- **Fully Responsive & Accessible.**
+
+---
+
+## 🚀 Demo
+
+👉 [Live Site](http://localhost:3000) *(for local demo after running dev server)*
+
+---
+
+## 🛠️ Getting Started
+
+Clone the repo & install dependencies:
+
+\`\`\`bash
+git clone https://github.com/Kaushik2003/portfolio.git
+cd portfolio
+
+# Install dependencies
+
+npm install
+# or
+yarn install
+# or
+pnpm install
+\`\`\`
+
+Run the development server:
+
+\`\`\`bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Folder Structure
 
-## Learn More
+\`\`\`
+portfolio/
+  ├── app/components/    # Main page sections (Hero, About, Projects, etc.)
+  ├── components/        # Reusable UI components & utilities
+  ├── hooks/             # Custom React hooks
+  ├── lib/               # Helper functions & libraries
+  ├── public/            # Static assets (images, resume)
+  └── styles/            # Global styles
+\`\`\`
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧰 Built With
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Radix UI](https://www.radix-ui.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- **Blockchain:** Aptos, Move, Solidity, EVM
+- **Backend/AI:** FastAPI, Node.js, Express, ML frameworks
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions, issues, and feature requests are welcome!  
+Check the [issues page](https://github.com/Kaushik2003/portfolio/issues).
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 📬 Contact
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaushik-samadder-4346191a9/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/Kaushik2003)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?logo=twitter&logoColor=white)](https://twitter.com/kzark_dev)
+[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:kaushik.samadder@example.com)
+
+---
+
+> Built & designed by **Kaushik Samadder** – Always curious, always building.
